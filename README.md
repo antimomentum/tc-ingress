@@ -1,7 +1,7 @@
 ## Deep packet inspection with tc made easier :)
 
 
-The test script is intended to make writing tc ingress rules for deep packet inspection easier. Also includes a length check first to help with efficiency. The script expects 4 arguments.
+The test script is intended to make writing tc ingress rules for deep packet inspection easier. Also includes a length check first to help with efficiency. 
 
 
 
@@ -9,6 +9,8 @@ The test script is intended to make writing tc ingress rules for deep packet ins
 u32 in iptables and "match u32" in tc both grab 4 bytes at a time by default. If you only want to match 3 bytes change an ff to 00 in the test script.
 
 
+
+This script expects 4 arguments:
 
 1. The interface name you want to make the rule on.
 
