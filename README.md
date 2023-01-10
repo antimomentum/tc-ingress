@@ -19,7 +19,7 @@ This script expects 4 arguments:
 
 
 3.  We use iptables u32 default syntax here. So the byte number or offset you want to start the 4 byte check from is on the left side of the "=" and the 4 bytes to match go on the right side. For example "36=0x0103080a" means:
-    starting at byte 35 in the packet look for these 4 bytes: 0103080a.
+    starting at byte 36 in the packet look for these 4 bytes: 0103080a.
 
 
 4. The action. This will usually just be either "pass" or "drop" but tc does have others.
