@@ -18,7 +18,7 @@ This script expects 4 arguments:
 2. The "Total Length" of the packet you want to do the byte check on. For instance if the packet is 48 bytes then use "48" for this argument
 
 
-3.  We use iptables u32 default syntax here. So the byte number or offset you want to start the 4 byte check from is on the left side of the "=" and the 4 bytes to match go on the right side. For example "35=0x0a010308" means:
+3.  We use iptables u32 default syntax here. So the byte number or offset you want to start the 4 byte check from is on the left side of the "=" and the 4 bytes to match go on the right side. For example "36=0x0103080a" means:
     starting at byte 35 in the packet look for these 4 bytes: 0103080a.
 
 
